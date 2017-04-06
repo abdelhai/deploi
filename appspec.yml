@@ -11,6 +11,3 @@ hooks:
   - location: scripts/python_system_packages
     timeout: 500
     runas: root
-  - location: scripts/relaod_server
-    timout: 500
-    runas: root
