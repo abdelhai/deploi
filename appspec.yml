@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: /hello.html
+    destination: /usr/share/nginx/html/
+hooks:
+  BeforeInstall:
+  - location: scripts/sys_requirements
+    timeout: 500
+    runas: root
+  - location: scripts/python_system_packages
+    timeout: 500
+    runas: root
+  - location: scripts/relaod_server
+    timout: 500
+    runas: root

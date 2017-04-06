@@ -1,0 +1,18 @@
+#!/bin/bash
+yum update
+yum install -y \
+gcc-c++ \
+openssl-devel \
+postgresql94 \
+postgresql94-devel \
+postgresql94-server \
+postgresql94-contrib \
+postgresql94-libs \
+python35 \
+python35-devel \
+libjpeg-turbo-devel \
+libpng-devel \
+freetype-devel \
+nginx \
+pcre \ #for uwsgi
+pcre-devel #for uwsgi

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# System-wide python packages
+# Install pip 3 with easy_install
+easy_install-3.5 pip
+
+# Put a link to pip3 in the bin dir
+ln /usr/local/bin/pip3 /usr/bin/
+
+pip3 install virtualenv
+
+# supervisord is Python 2 only
+pip-2.7 install supervisor
